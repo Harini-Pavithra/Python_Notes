@@ -53,3 +53,32 @@
 - The following table lists all operators from highest precedence to lowest.
 
 ![Opeartors_Precedence](https://github.com/Harini-Pavithra/Python_Notes/blob/main/images/Opeartors_Precedence.PNG)
+
+### Data types
+- Data types are the classification or categorization of data items.
+- Following are the standard or built-in data type of Python:
+  - Numeric: numeric data type represent the data which has numeric value.
+    - Integer : This value is represented by int class. It contains positive or negative whole numbers (without fraction or decimal). In Python there is no limit to how long an integer value can be.
+    - Float: This value is represented by float class. It is a real number with floating point representation. It is specified by a decimal point. Optionally, the character e or E followed by a positive or negative integer may be appended to specify scientific notation.
+    - Complex Numbers: Complex number is represented by complex class. It is specified as (real part) + (imaginary part)j. For example – 2+3j.
+  - Sequence Type: Sequence is the ordered collection of similar or different data types. Sequences allows to store multiple values in an organized and efficient fashion. 
+    - String
+    - List
+    - Tuple
+  - Boolean : Data type with one of the two built-in values, True or False
+  - Set
+  - Dictionary
+
+### Type Hierarchies
+
+![Type_Hierarchies](https://github.com/Harini-Pavithra/Python_Notes/blob/main/images/Type_Hierarchies.PNG)
+
+### Strings in Python
+- Strings in python are surrounded by either single quotation marks, or double quotation marks.
+```
+'hello' is the same as "hello".
+```
+
+- The string functions of python are 
+
+### if statement
