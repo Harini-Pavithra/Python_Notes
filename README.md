@@ -82,3 +82,9 @@
 - The string functions of python are 
 
 ### if statement
+- The if statement is used to the conditions.
+- The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".
+- The else keyword catches anything which isn't caught by the preceding conditions.
+- We can have if statements inside if statements, this is called nested if statements.
+
+### for loop
