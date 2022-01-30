@@ -87,7 +87,146 @@
 - The else keyword catches anything which isn't caught by the preceding conditions.
 - We can have if statements inside if statements, this is called nested if statements.
 
+Syntax:
+```
+if condition: statements
+[elif condition: statements] ...
+else:
+statements
+```
+
 ### for loop
 - A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
 - This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
 - With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+
+Syntax:
+```
+for var in sequence: 
+  statements
+``` 
+### Break, Continue and Pass statements
+- The break statement, like in C, breaks out of the smallest enclosing for or while loop.
+- The continue statement, also borrowed from C, continues with the next iteration of the loop
+- The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action.
+
+### Strings
+- Strings are amongst the most popular types in Python.
+- We can create them simply by enclosing characters in quotes.
+- Python treats single quotes the same as double quotes.
+
+### String Functions
+
+![String_Functions](https://github.com/Harini-Pavithra/Python_Notes/blob/main/images/String_Functions.PNG)
+
+### String Formatting Operators
+
+![String_Formatting_Operators](https://github.com/Harini-Pavithra/Python_Notes/blob/main/images/String_Formatting_Operators.PNG)
+
+### Python Lists:
+
+- The list is a most versatile data type available in Python which can be written as a list of comma-separated values (items) between square brackets.
+
+- Good thing about a list is that items in a list need not all have the same type.
+
+Example:
+```
+list1 = ['physics', 'chemistry', 1997, 2000]
+list2 = [1, 2, 3, 4, 5 ]
+list3 = ["a", "b", "c", "d"]
+```
+
+### List Operations
+
+1. list.extend(L): Extend the list by appending all the items in the given list.
+2. list.append(x):	Add an item to the end of the list.
+3. list.remove(x): Remove the first item from the list whose value is x. It is an error if there is no such item.
+4. list.clear(): Remove all items from the list. Equivalent to del a[:]
+5. list.index(x) : Return the index in the list of the first item whose value is x. It is an error if there is no such item.
+6. list.count(x) : Return the number of times x appears in the list.
+7. list.reverse(): Reverse the elements of the list in place.
+8. list.copy() : Return a shallow copy of the list. Equivalent to a[:]
+
+### Set
+- Python also includes a data type for sets.
+- A set is an unordered collection with no duplicate elements.
+- Basic uses include membership testing and eliminating duplicate entries.
+- Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
+
+Example:
+```
+a = set('abracadabra')
+b= set('alacazam')
+```
+
+### Dictionaries
+- Dictionaries consist of pairs (called items) of keys and their corresponding values.
+- Keys must be immutable
+
+Example:
+```
+dict = {'Alice': '2341', 'Beth': '9102', 'Cecil': '3258'}
+
+del dict['Name']; # remove entry with key 'Name' 
+dict.clear(); # remove all entries in dict
+del dict ; # delete entire dictionary
+```
+
+### Tuples
+- A Tuple is a collection of Python objects separated by commas. 
+- In someways a tuple is similar to a list in terms of indexing, nested objects and repetition but a tuple is immutable unlike lists which are mutable.
+
+Example:
+```
+tup = ('python', 'example')
+```
+
+### Modules
+- A module allows you to logically organize your Python code.
+- Grouping related code into a module makes the code easier to understand and use.
+- A module is a Python object with arbitrarily named attributes that you can bind and reference.
+- Simply, a module is a file consisting of Python code.
+
+Example:
+```
+def print_name( parameter ): 
+  print ("Hello : ", parameter) 
+  return
+```
+
+### Import statement
+- We can use any Python source file as a module by executing an import statement in some other Python source file.
+- The import has the following syntax:
+```
+import module1[, module2[,... moduleN]
+```
+- When the interpreter encounters an import statement, it imports the module if the module is present in the search path.
+- A search path is a list of directories that the interpreter searches before importing a module.
+- A module can define functions, classes and variables.
+- A module can also include run able code.
+
+### Built-in List Functions & Methods
+1. abs(x) -	Return the absolute value of a number. The argument may be an integer or a floating point number.
+2. bin(x) -	Convert an integer number to a binary string.
+3. len(s) -	Return the length (the number of items) of an object. The argument may be a sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set).
+4. max(iterable, *[, key, default]) -	Return the largest item in an iterable or the largest of two or more arguments.
+5. min(iterable, *[, key, default]) -	Return the smallest item in an iterable or the smallest of two or more arguments.
+
+### Range function
+- If we do need to iterate over a sequence of numbers, the built-in function range() comes in handy.
+- It generates arithmetic progressions.
+
+Example:
+```
+range(5, 10)
+5 through 9
+
+range(0, 10, 3)
+0, 3, 6, 9
+
+range(-10, -100, -30)
+-10, -40, -70
+```
+
+
+```
