@@ -105,6 +105,15 @@ Syntax:
 for var in sequence: 
   statements
 ``` 
+
+### while loop
+- With the while loop we can execute a set of statements as long as a condition is true.
+
+Syntax:
+```
+while condition: 
+  statements
+```
 ### Break, Continue and Pass statements
 - The break statement, like in C, breaks out of the smallest enclosing for or while loop.
 - The continue statement, also borrowed from C, continues with the next iteration of the loop
