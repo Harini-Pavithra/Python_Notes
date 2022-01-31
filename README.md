@@ -184,12 +184,12 @@ del dict ; # delete entire dictionary
 ### Tuples
 - A Tuple is a collection of Python objects separated by commas. 
 - In someways a tuple is similar to a list in terms of indexing, nested objects and repetition but a tuple is immutable unlike lists which are mutable.
-
+- If a single element has to be stored in tuple then a trailing zero should be added i.e tuple = (hello,)
 Example:
 ```
 tup = ('python', 'example')
 ```
-
+- Tuples are more efficient than lists (less memory consumtion than lists)
 ### Modules
 - A module allows you to logically organize your Python code.
 - Grouping related code into a module makes the code easier to understand and use.
