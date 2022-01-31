@@ -237,5 +237,15 @@ range(-10, -100, -30)
 -10, -40, -70
 ```
 
-
+### List Comprehensions
+- List comprehensions provide a concise way to create lists.
+- Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.
+- For example, assume we want to create a list of squares, like: [x**2 for x in range(10)]
+- A list comprehension consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses.
+ Example:
+ ```
+[(x, y) for x in [1,2,3] for y in [3,1,4]]
+[(1, 3), (1, 1), (1, 4), (2, 3), (2, 1), (2, 4), (3, 3), (3, 1), (3, 4)]
 ```
+
+
