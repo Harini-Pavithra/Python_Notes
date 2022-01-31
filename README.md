@@ -248,4 +248,10 @@ range(-10, -100, -30)
 [(1, 3), (1, 1), (1, 4), (2, 3), (2, 1), (2, 4), (3, 3), (3, 1), (3, 4)]
 ```
 
-
+### Set Comprehensions
+- Similarly to list comprehensions, set comprehensions are also supported
+Example
+```
+ a = {x for x in 'abracadabra' if x not in 'abc'}
+ {'r', 'd'}
+```
