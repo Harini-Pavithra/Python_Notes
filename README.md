@@ -220,6 +220,7 @@ import module1[, module2[,... moduleN]
 3. len(s) -	Return the length (the number of items) of an object. The argument may be a sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set).
 4. max(iterable, *[, key, default]) -	Return the largest item in an iterable or the largest of two or more arguments.
 5. min(iterable, *[, key, default]) -	Return the smallest item in an iterable or the smallest of two or more arguments.
+6. hash(object) - Return the hash value of the object (if it has one). Hash values are integers. They are used to quickly compare dictionary keys during a dictionary lookup. Numeric values that compare equal have the same hash value (even if they are of different types, as is the case for 1 and 1.0).
 
 ### Range function
 - If we do need to iterate over a sequence of numbers, the built-in function range() comes in handy.
