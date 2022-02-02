@@ -267,3 +267,15 @@ seasons = ['Spring', 'Summer', 'Fall', 'Winter'] print(list(enumerate(seasons)))
 [(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
 ```
 
+### Scope
+- Scope is the portion of the program from where a namespace can be accessed directly without any prefix. At any given moment, there are at least three nested scopes.
+1. Scope of the current function which has local names
+2. Scope of the module which has global names
+3. Outermost scope which has built-in names
+
+### globals() and local() functions
+
+- If locals() is called from within a function, it will return all the names that can be accessed locally from that function.
+- If globals() is called from within a function, it will return all the names that can be accessed globally from that function.
+- The return type of both these functions is dictionary. Therefore, names can be extracted using the keys() function.
+
