@@ -307,3 +307,45 @@ def make_incrementor(n): return lambda x: x + n
 f = make_incrementor(42)
 f(2) 44
 ```
+
+### map function
+- The advantage of the lambda operator can be seen when it is used in combination with the map() function.
+- map() is a function with two arguments: fUNCtion and Sequence
+- r = map(func, seq)
+- The first argument func is the name of a function and the second a sequence (e.g. a list)
+seq.
+- map() can be applied to more than one list.
+- The lists have to have the same length.
+- map() will apply its lambda function to the elements of the argument lists,
+Example
+```
+ a = [1,2,3,4]
+ b = [17,12,11,10]
+ c = [-1,-4,5,9]
+list(map(lambda x,y:x+y, a,b)) [18, 14, 14, 14]
+```
+### filtering function
+- The function filter(function, list) offers an elegant way to filter out all the elements of a list, for which the function “function” returns True.
+- The function filter( f , l ) needs a function f as its first argument.
+    - f returns a Boolean value,
+    - i.e. either True or False.
+- This function will be applied to every element of the list l.
+- Only if f returns True will the element of the list be included in the result list.
+Example:
+```
+def f(x): return x % 3 == 0 or x % 5 == 0
+...
+filter(f, range(2, 25))
+[3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24]
+```
+
+### reduce function
+- reduce(function, sequence) : returns a single value constructed by calling the binary function “function” on the first two items of the sequence, then on the result and the next item, and so on.
+- Continue like this until just one element is left and return this element as the result of reduce()
+Example
+```
+reduce(lambda x,y: x+y, [47,11,42,13])
+113
+```
+
+
