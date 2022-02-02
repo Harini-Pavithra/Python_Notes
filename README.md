@@ -256,3 +256,14 @@ Example
  a = {x for x in 'abracadabra' if x not in 'abc'}
  {'r', 'd'}
 ```
+
+### enumerate
+- enumerate(iterable, start=0)
+- Returns an enumerate object.
+- enumerate essentially turns each element of the input list into a list of tuples with the first element as the index and the element as the second.
+Example
+```
+seasons = ['Spring', 'Summer', 'Fall', 'Winter'] print(list(enumerate(seasons)))
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+```
+
