@@ -289,6 +289,12 @@ seasons = ['Spring', 'Summer', 'Fall', 'Winter'] print(list(enumerate(seasons)))
     - lambda
     - list comprehension
 
+Built-in functions:
+- There are three built-in functions that are very useful when used with lists: filter(), map(), and reduce().
+- map(function, sequence) calls function(item) for each of the sequence’s items and returns a list of the return values.
+- filter(function, sequence) returns a sequence consisting of those items from the sequence for which function(item) is true.
+- reduce(function, sequence) returns a single value constructed by calling the binary function “function” on the first two items of the sequence, then on the result and the next item, and so on.
+
 ### lambda operator
 - The lambda operator or lambda function is a way to create small anonymous functions.
 - These functions are throw-away functions.
@@ -301,4 +307,3 @@ def make_incrementor(n): return lambda x: x + n
 f = make_incrementor(42)
 f(2) 44
 ```
-
