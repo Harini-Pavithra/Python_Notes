@@ -279,3 +279,26 @@ seasons = ['Spring', 'Summer', 'Fall', 'Winter'] print(list(enumerate(seasons)))
 - If globals() is called from within a function, it will return all the names that can be accessed globally from that function.
 - The return type of both these functions is dictionary. Therefore, names can be extracted using the keys() function.
 
+### Functional programming
+- Functional programming is all about expressions.
+- We may say that the Functional programming is an expression oriented programming.
+- Expression oriented functions of Python provides are:
+  	- map(aFunction, aSequence)
+    - filter(aFunction, aSequence)
+    - reduce(aFunction, aSequence)
+    - lambda
+    - list comprehension
+
+### lambda operator
+- The lambda operator or lambda function is a way to create small anonymous functions.
+- These functions are throw-away functions.
+- Lambda functions can be used wherever function objects are required
+- The argument list consists of a comma separated list of arguments and the expression is an arithmetic expression using these arguments.
+Example:
+```
+def make_incrementor(n): return lambda x: x + n
+
+f = make_incrementor(42)
+f(2) 44
+```
+
